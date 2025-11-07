@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Expense Title -->
+    <EditText
+        android:id="@+id/etTitle"
+        android:hint="Expense Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName" />
+
+    <!-- Amount -->
+    <EditText
+        android:id="@+id/etAmount"
+        android:hint="Amount (Rs)"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Category -->
+    <EditText
+        android:id="@+id/etCategory"
+        android:hint="Category (e.g. Food)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Save Expense"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2563EB"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
