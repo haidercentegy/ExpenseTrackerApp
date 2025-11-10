@@ -32,8 +32,13 @@ public class MainActivity extends AppCompatActivity {
         tvMonth.setText("Month: " + (month != null ? month : "November"));
         tvTotalExpense.setText("Rs. " + dbHelper.getTotalExpense());
 
-        btnAddExpense.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AddExpenseActivity.class)));
-        btnViewSummary.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SummaryActivity.class)));
+        btnAddExpense.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, AddExpenseActivity.class))
+        );
+
+        btnViewSummary.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, SummaryActivity.class))
+        );
     }
 
     @Override
@@ -42,4 +47,20 @@ public class MainActivity extends AppCompatActivity {
         // Refresh total expense
         tvTotalExpense.setText("Rs. " + dbHelper.getTotalExpense());
     }
+
+    // ✅ Exit Confirmation Dialog on Back Press
+    @Override
+    public void onBackPressed() {
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Exit App")
+                .setMessage("Are you sure you want to exit?")
+                .setPositiveButton("Yes", (dialog, which) -> {
+                    dialog.dismiss();
+                    super.onBackPressed(); // ✅ now properly calling super
+                    finishAffinity();      // closes entire app
+                })
+                .setNegativeButton("No", (dialog, which) -> dialog.dismiss())
+                .show();
+    }
+
 }
