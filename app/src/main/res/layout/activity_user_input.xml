@@ -29,17 +29,25 @@
         android:textColorHint="#9CA3AF"
         android:layout_marginBottom="16dp" />
 
-    <EditText
+    <!-- Label for month -->
+    <TextView
+        android:id="@+id/tvMonthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Month"
+        android:textColor="#1E293B"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Spinner for month selection -->
+    <Spinner
         android:id="@+id/monthInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Month (e.g. November)"
-        android:inputType="textCapWords"
+        android:spinnerMode="dropdown"
         android:background="@drawable/rounded_edittext"
         android:padding="14dp"
-        android:textColor="#000000"
-        android:textColorHint="#9CA3AF"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="24dp"/>
 
     <Button
         android:id="@+id/btnContinue"
@@ -53,5 +61,4 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_gravity="center" />
-
 </LinearLayout>
