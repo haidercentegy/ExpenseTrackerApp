@@ -24,6 +24,9 @@
             </intent-filter>
         </activity>
 
+        <!-- 🔹 Login Screen -->
+        <activity android:name=".LoginActivity" />
+
         <!-- 🔹 User Input Screen -->
         <activity android:name=".UserInputActivity" />
 

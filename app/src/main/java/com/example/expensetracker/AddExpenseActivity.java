@@ -90,15 +90,16 @@ public class AddExpenseActivity extends AppCompatActivity {
                 return;
             }
 
+            // ✅ Get current date
             String date = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
 
             if (expenseId == -1) {
-                // ✅ Add New Expense
-                dbHelper.addExpense(title, amount, category);
+                // ✅ Add New Expense with date
+                dbHelper.addExpense(title, amount, category, date);
                 Toast.makeText(this, "Expense Added!", Toast.LENGTH_SHORT).show();
             } else {
-                // ✅ Update Existing Expense
-                dbHelper.updateExpense(expenseId, title, amount, category);
+                // ✅ Update Existing Expense with date
+                dbHelper.updateExpense(expenseId, title, amount, category, date);
                 Toast.makeText(this, "Expense Updated!", Toast.LENGTH_SHORT).show();
             }
 
