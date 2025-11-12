@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-
+    <!-- SplashActivity theme -->
+    <style name="Theme.ExpenseTracker.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/black</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/gold</item>
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/black</item>
+        <!-- Optional: Text appearances can be inherited from login theme -->
+    </style>
 </resources>
