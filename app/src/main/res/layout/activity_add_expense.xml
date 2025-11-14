@@ -40,12 +40,13 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp" />
 
+        <!-- Spinner with arrow -->
         <Spinner
             android:id="@+id/spinnerCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:background="@drawable/rounded_edittext"
+            android:background="@drawable/spinner_background"
             android:layout_marginBottom="20dp" />
 
         <Button
