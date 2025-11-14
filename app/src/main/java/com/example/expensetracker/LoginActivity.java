@@ -63,8 +63,8 @@ public class LoginActivity extends AppCompatActivity {
         // Sign Up button
         btnSignup.setOnClickListener(v -> {
             // Redirect to User Input / Sign Up screen
-//            Intent intent = new Intent(this, UserInputActivity.class);
-//            startActivity(intent);
+   Intent intent = new Intent(this, CreateAccountActivity.class);
+          startActivity(intent);
         });
     }
 }

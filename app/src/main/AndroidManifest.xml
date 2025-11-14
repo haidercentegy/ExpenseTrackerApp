@@ -28,7 +28,7 @@
         <activity android:name=".LoginActivity" />
 
         <!-- 🔹 User Input Screen -->
-        <activity android:name=".UserInputActivity" />
+        <activity android:name=".CreateAccountActivity"/>
 
         <!-- 🔹 Expense Home Screen -->
         <activity android:name=".ExpenseHomeActivity" />
