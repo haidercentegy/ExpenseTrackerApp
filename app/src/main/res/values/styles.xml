@@ -2,9 +2,12 @@
 
     <!-- Main App Theme -->
     <style name="Theme.ExpenseTracker" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/teal_200</item>
+        <!-- Top bar / toolbar color -->
+        <item name="colorPrimary">@color/gold</item>
+        <!-- Status bar color -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!-- Accent color (buttons, highlights) -->
+        <item name="colorAccent">@color/gold</item>
     </style>
 
     <!-- Splash Theme -->
