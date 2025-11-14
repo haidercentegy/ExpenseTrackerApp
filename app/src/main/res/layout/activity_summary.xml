@@ -4,43 +4,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    android:gravity="center"
     android:background="@color/white">
 
     <TextView
         android:id="@+id/totalExpenseText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Total Spent: Rs. 0"
         android:textColor="@color/black"
-        android:textSize="20sp"
         android:textStyle="bold"
+        android:textSize="22sp"
         android:gravity="center"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <!-- Spinner for category filter -->
     <Spinner
         android:id="@+id/categorySpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
         android:layout_marginBottom="20dp" />
 
     <ListView
         android:id="@+id/expenseListView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp" />
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"
+        android:layout_weight="1" />
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Back to Home"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/gold"
+        android:textStyle="bold"
         android:textAllCaps="false"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/purple_500"
-        android:textColor="@color/white" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
